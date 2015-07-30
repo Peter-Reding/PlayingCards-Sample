@@ -2,7 +2,7 @@
 
 namespace PlayingCards.Models
 {
-    public class Card: IComparable
+    public class Card : IComparable, IEquatable<Card>
     {
         private FaceValue _faceValue;
         private Suite _suit;
@@ -75,6 +75,18 @@ namespace PlayingCards.Models
             catch
             {
                 throw new ArgumentException();
+            }
+        }
+
+        public bool Equals(Card other)
+        {
+            if (this.FaceValue == other.FaceValue && this.Suite == other.Suite)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
             }
         }
     }
