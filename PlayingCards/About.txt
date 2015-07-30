@@ -1,0 +1,10 @@
+﻿THE EXERCISES
+
+1. Write a method, function, or procedure that sorts a standard deck of 52 playing cards in ascending order.
+
+2. Write a method, function, or procedure that randomly shuffles a standard deck of 52 playing cards.
+
+
+************************************************************************************
+
+No UI reqs were given but a simple UI was added to illistrate the functionality of the code.
