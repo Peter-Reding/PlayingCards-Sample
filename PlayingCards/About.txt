@@ -1,4 +1,6 @@
-﻿THE EXERCISES
+﻿This is a code sample created by Peter Reding (Peter.reding3@gmail.com) for a potential employer.
+
+THE EXERCISES
 
 1. Write a method, function, or procedure that sorts a standard deck of 52 playing cards in ascending order.
 
@@ -7,4 +9,6 @@
 
 ************************************************************************************
 
-No UI reqs were given but a simple UI was added to illistrate the functionality of the code.
+No UI reqs were given but a simple UI was added to illistrate the functionality of the code. It is ugly
+and will refresh your whole page any time you do anything. The end purpose of the deck is to be used in 
+multiple games that will provide their own UI. No Unit tests were built for the UI for this same reason.
