@@ -1,0 +1,33 @@
+﻿@using PlayingCards.Models;
+@using PlayingCards.Helpers;
+
+@model Deck
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Playing Card Sample</h1>
+    <p class="lead">Have fun shuffling and sorting cards.</p>
+</div>
+
+<div id="deck" class="row">
+    @CardHelper.PrintDeck(Model)
+
+</div>
+
+@using (Html.BeginForm("Shuffle", "Home", FormMethod.Post, Model))
+{
+    <div class="row">
+        <input type="submit" value="Shuffle" />
+    </div>
+}
+
+@using (Html.BeginForm("Sort", "Home", FormMethod.Post, Model))
+{
+    <div class="row">
+        <input type="submit" value="Sort" />
+    </div>
+}
+
+
