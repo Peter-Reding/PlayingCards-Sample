@@ -15,6 +15,7 @@ namespace PlayingCards.Controllers
             return View("Index",deck);
         }
 
+        //Shuffle Current Deck
         [HttpPost]
         public ActionResult Shuffle(Deck deck)
         {
@@ -22,6 +23,7 @@ namespace PlayingCards.Controllers
             return View("Index", deck);
         }
 
+        //Shuffle New Deck
         [HttpGet]
         public ActionResult Shuffle()
         {
@@ -30,6 +32,7 @@ namespace PlayingCards.Controllers
             return View("Index",deck);
         }
 
+        //Sort Current Deck
         [HttpPost]
         public ActionResult Sort(Deck deck)
         {
@@ -37,6 +40,7 @@ namespace PlayingCards.Controllers
             return View("Index", deck);
         }
 
+        //Sort New Deck
         [HttpGet]
         public ActionResult Sort()
         {
